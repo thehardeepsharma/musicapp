@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'musicapp',
         'ENGINE': 'django.db.backends.mysql',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'demo',
         'HOST': '127.0.0.1'
     }
 }

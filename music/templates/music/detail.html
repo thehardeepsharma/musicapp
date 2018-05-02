@@ -1,3 +1,10 @@
-<div><b>Title :</b> {{ album.album_title }}</div>
-<div><b>Artist:</b> {{ album.artist }}</div>
-<div><b>Genre :</b> {{ album.genre }}</div>
+<img width="200px" src="{{album.album_logo}}" >
+<h1> {{ album.album_title }}</h1>
+<h3> {{ album.artist }}</h3>
+<h4> {{ album.genre }}</h4>
+
+<ul>
+	{% for song in album.song_set.all %}
+		<li> {{ song.song_title }}</li>
+	{% endfor %}
+</ul>
